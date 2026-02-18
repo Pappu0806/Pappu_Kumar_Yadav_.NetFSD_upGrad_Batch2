@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blog Layout</title>
+    <style>
+        /* Reset & Base Styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color: #f4f6f9;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            letter-spacing: 1px;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+        }
+
+        /* Main Blog Container */
+        .blog-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        /* Blog Card */
+        .blog-card {
+            flex: 1 1 30%;   /* Flexible columns */
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+
+        .blog-card h2 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #1e293b;
+        }
+
+        .blog-card p {
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .read-more {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #2563eb;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 5px;
+            font-size: 0.85rem;
+            transition: 0.3s;
+        }
+
+        .read-more:hover {
+            background-color: #1d4ed8;
+        }
+
+        /* Tablet View */
+        @media (max-width: 900px) {
+            .blog-card {
+                flex: 1 1 45%;
+            }
+        }
+
+        /* Mobile View */
+        @media (max-width: 600px) {
+            .blog-container {
+                padding: 15px;
+            }
+
+            .blog-card {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Tech Blog</h1>
+    </header>
+
+    <main class="blog-container">
+
+        <div class="blog-card">
+            <h2>Understanding Flexbox</h2>
+            <p>Learn how Flexbox helps create responsive layouts with minimal effort and clean structure.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+
+        <div class="blog-card">
+            <h2>Mastering CSS Grid</h2>
+            <p>Explore how CSS Grid simplifies complex two-dimensional layouts for modern websites.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+
+        <div class="blog-card">
+            <h2>Responsive Web Design</h2>
+            <p>Discover how media queries and flexible units make websites adaptable across devices.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+
+        <div class="blog-card">
+            <h2>Improving UI with Typography</h2>
+            <p>Enhance readability and visual hierarchy using spacing, font sizes, and alignment.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+
+    </main>
+
+</body>
+</html>

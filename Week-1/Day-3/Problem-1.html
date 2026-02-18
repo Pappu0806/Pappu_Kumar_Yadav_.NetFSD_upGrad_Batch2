@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Card</title>
+     <style>
+        /* Page Styling */
+        body {
+            background-color: #f4f6f9;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Card Styling */
+        .profile-card {
+            background-color: #ffffff;
+            width: 320px;
+            padding: 25px;              
+            border: 2px solid #ddd;    
+            border-radius: 12px;        
+            margin: 20px;               
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Name */
+        .profile-card h2 {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        /* Role */
+        .role {
+            font-size: 16px;
+            font-weight: 600;
+            color: #555;
+            text-decoration: underline;
+            margin-bottom: 15px;
+        }
+
+        /* Description */
+        .description {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        /* Button */
+        .contact-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        /* Hover Effect */
+        .contact-btn:hover {
+            background-color: #0056b3;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <h2>Pappu Yadav</h2>
+        <div class="role">Java Developer</div>
+        <p class="description">
+            Passionate software developer specializing in Java and backend development.
+            Loves building scalable applications and solving real-world problems.
+        </p>
+        <button class="contact-btn">Contact Me</button>
+    </div>
+</body>
+</html>
